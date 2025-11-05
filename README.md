@@ -1,29 +1,39 @@
-# NAZACHET
+# Tech_shop
 
-This template should help get you started developing with Vue 3 in Vite.
+Тема работы:
+Создать интернет магазин с главной страницей, страницей со списком продуктов, складом, корзиной, профилем и полной отчетностью в PDF
+
+Реализовано:
+Главная страница с анимациями
+Страница с товарами, где все товары находятся в виде карточек, пагинация, возможность добавить в корзину и провалиться на страницу товара.
+Страница с складом. Все товары с возможностью добавлять, удалять и изменять товары в магазине (Доступ через админку).
+Страница о магазине.
+Страница с полным списком продаж за все время с фильтрами (Доступ через админку).
+Профиль пользователя.
+Полная отчетность по магазину в складе.
+Так же есть возможность скачать карточку товара в PDF.
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+[VSCode](https://code.visualstudio.com/)
 
 ## Project Setup
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
+go run server.go
 ```
 
-### Compile and Minify for Production
-
+## Data base paramethers
+Backup in folder DBs
 ```sh
-npm run build
+host=localhost port=5432 user=postgres password=superuser dbname=Products sslmode=disable
 ```
+
+## Tecnologys
+GO 1.23.4
+VUE 3
+Bootstrap 5.X
+NodeJs 18
+VITE 6.0.2
