@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173" # Пробрасываем порт фронтенда на 5173
+    networks:
+      - app-network
+    environment:
+      - VITE_API_URL=http://backend # Пример, если frontend обращается к backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "80:8080" # Пробрасываем порт бэкенда на 8080
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

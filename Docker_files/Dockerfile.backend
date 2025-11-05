@@ -1,0 +1,20 @@
+# Используем базовый образ для Go
+FROM golang:1.23
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Копируем go.mod и go.sum и устанавливаем зависимости
+COPY go.mod go.sum ./
+RUN go mod download
+
+# Копируем исходный код
+COPY . .
+
+# Сборка приложения
+RUN go build -o main .
+
+# Запуск сервера на порту 80
+ENV PORT=80
+EXPOSE 80
+CMD ["./main"]
