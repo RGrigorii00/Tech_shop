@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js Стандартная Модель</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <div><script type="module" src="threejsModel.js"></script></div>
+  <!-- <script>
+    // Сцена
+    const scene = new THREE.Scene();
+
+    // Камера (поля зрения, соотношение сторон, ближняя и дальняя плоскости отсечения)
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    // Рендерер
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Геометрия и материал куба
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+
+    // Добавление куба в сцену
+    scene.add(cube);
+
+    // Установка позиции камеры
+    camera.position.z = 5;
+
+    // Анимация
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Вращение куба
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      // Рендеринг сцены
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    // Обработчик изменения размера окна
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+  </script> -->
+</body>
+</html>
