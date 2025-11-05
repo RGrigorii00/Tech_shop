@@ -32,8 +32,8 @@ host=localhost port=5432 user=postgres password=superuser dbname=Products sslmod
 ```
 
 ## Tecnologys
-GO 1.23.4
-VUE 3
-Bootstrap 5.X
-NodeJs 18
-VITE 6.0.2
+* GO 1.23.4
+* VUE 3
+* Bootstrap 5.X
+* NodeJs 18
+* VITE 6.0.2
