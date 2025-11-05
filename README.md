@@ -37,4 +37,6 @@ host=localhost port=5432 user=postgres password=superuser dbname=Products sslmod
 * VUE 3
 * Bootstrap 5.X
 * NodeJs 18
+* Js
+* Docker
 * VITE 6.0.2
