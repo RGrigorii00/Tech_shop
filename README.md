@@ -20,6 +20,10 @@
 
 ## Project Setup
 
+Login data:
+* Admin - 111@111:111
+* User - 555@555:555
+
 ```sh
 npm install
 npm run dev
