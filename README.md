@@ -44,3 +44,4 @@ host=localhost port=5432 user=postgres password=superuser dbname=Products sslmod
 * Js
 * Docker
 * VITE 6.0.2
+* PostgreSQL17
